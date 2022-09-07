@@ -10,7 +10,7 @@ def home():
     return channels
 
 @app.route('/all', methods=['GET']) # Ruta que brinda los programas para la pagina HOME
-def home():
+def all():
     channels = parseXML('outputs/all.xml')
     return channels
 

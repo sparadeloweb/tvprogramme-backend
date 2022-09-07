@@ -24,8 +24,6 @@ RUN crontab /etc/cron.d/download_cron_job
 
 RUN touch /var/log/cron.log
 
-RUN service cron start
-
 EXPOSE 5000
 
 CMD ["python3", "api.py"]

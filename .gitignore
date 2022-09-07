@@ -1,6 +1,7 @@
 *~
 .mypy_cache
 outputs/
+logs/
 __pycache__/
 \#*\#
 DESCRIPTION.md

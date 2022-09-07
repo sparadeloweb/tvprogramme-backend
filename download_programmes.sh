@@ -1,4 +1,5 @@
 mkdir -p outputs
+mkdir -p logs
 echo "["$(date +%d-%m-%H:%M:%S)"] Script executed"  >> logs/log.txt
 echo "["$(date +%d-%m-%H:%M:%S)"] Starting download of home programmes"  >> logs/log.txt
 python3 programmes_downloader.py --config-file ./configs/home.conf --output ./outputs/home.xml
