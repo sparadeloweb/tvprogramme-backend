@@ -1,6 +1,6 @@
 *~
 .mypy_cache
+outputs/*/
 __pycache__/
-outputs/
 \#*\#
 DESCRIPTION.md
