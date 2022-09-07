@@ -4,6 +4,7 @@ ENV HOME /root
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
+ENV PORT 5000
 
 RUN apt-get update -y
 RUN apt-get install -y cron
@@ -22,6 +23,8 @@ RUN chmod 0644 /etc/cron.d/download_cron_job
 RUN crontab /etc/cron.d/download_cron_job
 
 RUN touch /var/log/cron.log
+
+EXPOSE 5000
 
 CMD ["python3", "api.py"]
     

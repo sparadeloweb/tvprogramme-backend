@@ -9,4 +9,4 @@ def home():
     channels = parseXML('home.xml')
     return channels
 
-app.run()
+app.run(host='0.0.0.0')
