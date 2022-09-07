@@ -4,7 +4,9 @@ ENV HOME /root
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
+ENV TZ CEST
 ENV PORT 5000
+
 
 RUN apt-get update -y
 RUN apt-get install -y cron
